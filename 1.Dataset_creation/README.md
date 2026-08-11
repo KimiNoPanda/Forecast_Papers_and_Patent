@@ -37,6 +37,9 @@ Retrieves paper abstracts and metadata from OpenAlex.
 python3 1get_papers_abstract.py
 ```
 
+**Output**
+Paper abstract and other information from OpenAlex by year
+
 ---
 
 ### `2CPC_combine.py`
@@ -45,6 +48,9 @@ Rearranges and combines the raw CPC code data downloaded from EPO into a usable 
 ```bash
 python3 2CPC_combine.py
 ```
+
+**Output**
+CPC code rearranged in parquet file
 
 ---
 
@@ -55,6 +61,9 @@ the most relevant patent classifications for each paper.
 ```bash
 python3 3papers_CPC_similarities.py
 ```
+
+**Output**
+Different parquet files containing the similarities between papers and CPC code
 
 ---
 
@@ -68,6 +77,9 @@ Retrieves all patents from EPO matching the CPC codes identified in the previous
 python3 4get_patents.py
 ```
 
+**Output**
+Patent abstract from EPO by year
+
 ---
 
 ### `5clean_patent.py`
@@ -76,3 +88,6 @@ Cleans and normalises the raw patent data retrieved from EPO.
 ```bash
 python3 5clean_patent.py
 ```
+
+**Output**
+Cleaned patent abstract
