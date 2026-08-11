@@ -91,3 +91,14 @@ python3 5clean_patent.py
 
 **Output**
 Cleaned patent abstract
+
+---
+### `plot.py`
+Plot the evolution of abstract by year
+
+```bash
+python3 plot.py
+```
+
+**Output**
+Evolution of Publications Over Time
