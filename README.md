@@ -106,7 +106,7 @@ The complete datasets used in this project are not distributed through this
 repository due to their size and potential redistribution restrictions.
 
 The pipeline uses scientific publication and citation data from OpenAlex,
-together with patent-derived information.
+together with patent-derived information from European Patent Office.
 
 The full datasets can be reconstructed using the data collection and preprocessing
 scripts provided in this repository and by adding the adequate API key.
