@@ -4,6 +4,8 @@ This repository contains the code developed for my Master's thesis on forecastin
 
 The framework was evaluated on **quantum information science** and aims to identify research areas likely to experience strong future growth.
 
+You can found the Thesis report [here](https://github.com/KimiNoPanda/Forecast_Papers_and_Patent/blob/main/Thesis/Master_Thesis_Dominique_Huang.pdf) 
+
 ## Overview
 
 The methodology combines:
@@ -19,6 +21,8 @@ The methodology combines:
 - A two-tier ranking framework for emerging technologies
 
 The forecasting model predicts three-year-ahead growth in the citation-network influence of research clusters.
+
+![Methodology](Methodology/methodology.png)
 
 ## Pipeline
 
