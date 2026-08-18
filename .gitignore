@@ -3,8 +3,12 @@
 *.pkl
 *.npy
 *.zip
+*.jsonl
+*.png
 
 
+
+.vscode/
 .env
 .venv/
 __pycache__/
