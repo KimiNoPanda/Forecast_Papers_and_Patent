@@ -706,9 +706,9 @@ def detect_emerging_technologies(
         * np.log1p(tier2["predicted_growth_rel"].clip(lower=0))
         * np.log1p(tier2["mean_fwci_now"].clip(lower=0))
         * np.log1p(tier2["mean_citations_now"].clip(lower=0))
-        * (1+0.25*np.log1p(tier2["patent_boost_recent"].clip(lower=0)))
-        * (1+ 0.25* np.log1p(tier2["boost_vel_recent"].fillna(0).clip(lower=0)))
-        * (1+ 0.10* np.log1p(tier2["patent_edge_vel"].fillna(0).clip(lower=0)))
+        * (1 + 0.25* np.log1p(tier2["patent_boost_recent"].clip(lower=0)))
+        * (1 +  0.25* np.log1p(tier2["boost_vel_recent"].fillna(0).clip(lower=0)))
+        * (1 +  0.1*np.log1p(tier2["patent_edge_vel"].fillna(0).clip(lower=0)))
     )
 
     wanted_t1 = ["cluster", "forecast_year", "predicted_target", now_col,"predicted_growth","predicted_growth_rel", "predicted_log_growth",
@@ -1396,7 +1396,7 @@ def main():
                         help="Directory with V5 metrics for validation")
     parser.add_argument("--out",     default="forecast_output")
     parser.add_argument("--target",  default="pagerank",
-                        choices=["pagerank", "in_degree", "in_strength"])
+                        choices=["pagerank", "in_degree", "in_strength", "in_raw_strength"])
     parser.add_argument("--horizon", type=int, default=3,
                         help="Years ahead to forecast")
     parser.add_argument("--concepts_dir", default="concept_provenance",
