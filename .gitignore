@@ -2,6 +2,7 @@
 *.parquet
 *.pkl
 *.npy
+*.zip
 
 
 .env
